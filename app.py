@@ -343,9 +343,9 @@ COLORS = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c', '#34
 # Initialize session state for preset handling
 if 'preset_values' not in st.session_state:
     st.session_state.preset_values = {
-        'mass': 1500,
-        'drag_coeff': 0.30,
-        'frontal_area': 2.3,
+        'mass': 150,
+        'drag_coeff': 0.5,
+        'frontal_area': 1.0,
         'top_speed': 180
     }
 
