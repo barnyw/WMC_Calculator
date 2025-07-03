@@ -330,7 +330,6 @@ CONSTANTS = {
 
 # CSV file mapping
 CSV_FILES = {
-    'WMC_E': 'data/WMC_E.csv',
     'UDDS': 'data/UDDS.csv',
     'WLTP_1': 'data/WLTC_1.csv',
     'WLTP_2': 'data/WLTC_2.csv',
@@ -993,8 +992,8 @@ def main():
         cycle_cols = st.columns(5)
         selected_cycles = []
 
-        cycle_names = ['WLTP_1', 'WLTP_2', 'WLTP_3', 'UDDS', 'WMC_E']
-        cycle_labels = ['WLTP_1', 'WLTP_2', 'WLTP_3', 'UDDS', 'WMC_E']
+        cycle_names = ['WLTP_1', 'WLTP_2', 'WLTP_3', 'UDDS']
+        cycle_labels = ['WLTP_1', 'WLTP_2', 'WLTP_3', 'UDDS']
 
         for i, (cycle_name, label) in enumerate(zip(cycle_names, cycle_labels)):
             with cycle_cols[i]:
